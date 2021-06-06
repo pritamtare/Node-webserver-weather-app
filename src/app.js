@@ -7,7 +7,7 @@ const forecast = require('./utils/forecast');
 
 
 const app = express();
-
+const port = process.env.PORT || 3000
 
 //express path config
 const staticPath = path.join(__dirname ,'../public')
@@ -105,7 +105,6 @@ app.get('/about/*',(req, res)=>{
 
 //Port setting -----------------------------------------------
 
-const port = 3000;
 app.listen(port,(error)=>{
    if(error){
        console.log(error)
