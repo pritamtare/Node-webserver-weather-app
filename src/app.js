@@ -1,3 +1,5 @@
+// https://node-webserver-weather-app.herokuapp.com/help
+
 const express = require('express')
 const hbs = require('hbs')
 const chalk = require('chalk');
@@ -34,7 +36,7 @@ app.get('/about',(req,res)=>{
     res.render( 'about', {
         title:'About Me',
         name:"pritam",
-        about:'Software Devloper'
+        about:'Software Developer'
     })
 })
 
